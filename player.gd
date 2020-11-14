@@ -1,10 +1,9 @@
 extends KinematicBody2D
 
+signal brainMode(brainOn) 
+
 const PLAYER_SPEED = 150
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var brainEquipped = false
 
 
@@ -28,6 +27,6 @@ func _physics_process(_delta):
 
 func toggle_brain():
 	brainEquipped = !brainEquipped
-	print("Brain on? ", brainEquipped)
+	emit_signal("brainMode", brainEquipped)
 	#show/hide enemy paths accordingly
 	
