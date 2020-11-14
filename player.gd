@@ -17,6 +17,7 @@ func _ready():
 func _process(delta):
 	if Input.is_action_just_pressed("toggle_brain"):
 		toggle_brain()
+	#if brain is on drop meter
 
 func _physics_process(_delta):
 	var motion = Vector2()
@@ -28,4 +29,5 @@ func _physics_process(_delta):
 func toggle_brain():
 	brainEquipped = !brainEquipped
 	print("Brain on? ", brainEquipped)
+	#show/hide enemy paths accordingly
 	
