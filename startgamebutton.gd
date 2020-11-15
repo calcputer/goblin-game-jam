@@ -1,5 +1,7 @@
 extends Button
 
+export var nextScene = "res://Floor1.tscn"
+export var resetBrain = false
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -17,4 +19,6 @@ func _ready():
 
 
 func _on_Button_pressed():
-	get_tree().change_scene("res://Floor1.tscn")
+	if(resetBrain):
+		Globals.brainJuice = 1000
+	get_tree().change_scene(nextScene)

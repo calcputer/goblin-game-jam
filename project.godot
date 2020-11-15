@@ -15,9 +15,13 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Goblin Game Jam"
+config/name="Are You Out Of Your Mind?"
 run/main_scene="res://MainMenu.tscn"
 config/icon="res://brain.png"
+
+[autoload]
+
+Globals="*res://globals.gd"
 
 [input]
 

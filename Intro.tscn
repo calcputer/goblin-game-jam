@@ -1,7 +1,6 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://startgamebutton.gd" type="Script" id=1]
-[ext_resource path="res://TitleFont.tres" type="DynamicFont" id=2]
 [ext_resource path="res://SubtitleFont.tres" type="DynamicFont" id=3]
 
 [node name="Control" type="Control"]
@@ -10,15 +9,6 @@ anchor_bottom = 1.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 20.0
-margin_top = 80.0
-margin_right = 1004.0
-margin_bottom = 580.0
-custom_fonts/normal_font = ExtResource( 2 )
-custom_colors/default_color = Color( 0.686275, 0, 0, 1 )
-text = "Are You Out Of Your Mind?"
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchor_right = 1.0
@@ -33,28 +23,33 @@ __meta__ = {
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 anchor_bottom = 800.0
-margin_left = 120.0
-margin_top = 241.335
-margin_right = 1004.0
-margin_bottom = 581.344
+margin_left = 20.0
+margin_top = 18.0872
+margin_right = 1000.0
+margin_bottom = 358.094
 custom_fonts/normal_font = ExtResource( 3 )
 custom_colors/default_color = Color( 0.196078, 0.00392157, 0.00392157, 1 )
-text = "Game by Calc, Jake, & Jet
-for Goblin Game Jam 2020"
+text = "America, 20XX: Humanity has finally created an Artificial Superintelligence by combining cutting edge neural network reseach with grey matter derived from human stem cells. The researchers believed this would lead to a brighter future for all... but the shareholders demanded a profit. Income inequality is worse than ever as the richest have access to any answer they desire.
+
+One day, a researcher has had enough and tries to break The Brain out of the lab, to fight for a better world. He replaces The Brain with the baked potato he had for lunch..."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button" type="Button" parent="."]
-margin_left = 413.533
-margin_top = 420.0
-margin_right = 613.533
-margin_bottom = 470.0
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -100.0
+margin_top = -81.0
+margin_right = 100.0
+margin_bottom = -31.0
 custom_fonts/font = ExtResource( 3 )
-text = "Start Game"
+text = "Next"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-nextScene = "res://Intro.tscn"
+nextScene = "res://Controls.tscn"
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]
