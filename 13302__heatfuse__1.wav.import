@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/13302__heatfuse__1.wav-96062e01e4cb158c9921d63735348542.sample"
+
+[deps]
+
+source_file="res://13302__heatfuse__1.wav"
+dest_files=[ "res://.import/13302__heatfuse__1.wav-96062e01e4cb158c9921d63735348542.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

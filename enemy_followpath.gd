@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const ENEMY_SPEED = 2
+const ENEMY_SPEED = 1.5
 
 
 # Called when the node enters the scene tree for the first time.

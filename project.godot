@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Goblin Game Jam"
 run/main_scene="res://MainMenu.tscn"
-config/icon="res://icon.png"
+config/icon="res://brain.png"
 
 [input]
 

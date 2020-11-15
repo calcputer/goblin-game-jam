@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://13302__heatfuse__1.wav" type="AudioStream" id=1]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 0.709804, 0, 0, 1 )
@@ -7,6 +9,10 @@ bg_color = Color( 0.709804, 0, 0, 1 )
 bg_color = Color( 0, 0, 0, 0 )
 
 [node name="Node" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
 
 [node name="GUICanvas" type="CanvasLayer" parent="."]
 
@@ -34,4 +40,4 @@ max_value = 1000.0
 value = 1000.0
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
+color = Color( 0.00392157, 0.00392157, 0.00392157, 1 )

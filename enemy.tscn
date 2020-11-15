@@ -1,10 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://enemy_followpath.gd" type="Script" id=1]
 [ext_resource path="res://buff_boy.png" type="Texture" id=2]
 [ext_resource path="res://visibilitycone.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
 
 [node name="PathFollow2D" type="PathFollow2D"]
 position = Vector2( 52, 73 )
@@ -13,7 +15,8 @@ position = Vector2( 52, 73 )
 script = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
-scale = Vector2( 2.5, 2 )
+position = Vector2( 9.51364, 16.6489 )
+scale = Vector2( 3, 3 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="Enemy"]
@@ -25,9 +28,10 @@ visible = false
 script = ExtResource( 3 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PoolVector2Array( -21.6446, 17.0398, 166.193, 96.6659, 166.712, -109.976, -19.6622, -32.0733 )
+material = SubResource( 2 )
+polygon = PoolVector2Array( -21.6446, 17.0398, 114.964, 74.9358, 166.33, 42.1835, 166.564, -51.0595, 113.705, -77.5146, -21.107, -18.2983 )
 
 [node name="Polygon2D" type="Polygon2D" parent="Area2D/CollisionPolygon2D"]
-color = Color( 0.784314, 0.666667, 0.258824, 0.631373 )
-polygon = PoolVector2Array( -17.1065, 17.8044, 168.442, 97.8395, 169.124, -110.284, -17.6312, -27.3981 )
+color = Color( 0.784314, 0.380392, 0.258824, 0.631373 )
+polygon = PoolVector2Array( -21.107, 11.9398, 118.744, 73.6759, 168.637, 38.3676, 168.926, -49.8259, 113.705, -76.2546, -21.107, -19.5582 )
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Player_body_entered"]
