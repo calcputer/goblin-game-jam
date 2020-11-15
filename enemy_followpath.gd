@@ -13,8 +13,6 @@ func _process(_delta):
 	rotation = -pathFollow.rotation
 	if(pathFollow.rotation_degrees <= 90 && pathFollow.rotation_degrees >= -90):
 		scale.x = -1
-		print("flip n")
 	else:
 		scale.x = 1
-		print("flip")
 	
