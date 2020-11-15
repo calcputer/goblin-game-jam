@@ -10,4 +10,9 @@ func _ready():
 func _process(_delta):
 	var pathFollow = get_parent() as PathFollow2D
 	pathFollow.offset += ENEMY_SPEED
+	rotation = -pathFollow.rotation
+	if(pathFollow.rotation_degrees < 90 && pathFollow.rotation_degrees > -90):
+		scale.x = -1
+	else:
+		scale.x = 1
 	

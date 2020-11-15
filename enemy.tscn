@@ -1,14 +1,13 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://enemy_followpath.gd" type="Script" id=1]
-[ext_resource path="res://brainplaceholder.PNG" type="Texture" id=2]
+[ext_resource path="res://buff_boy.png" type="Texture" id=2]
 [ext_resource path="res://visibilitycone.gd" type="Script" id=3]
 
 [sub_resource type="CircleShape2D" id=1]
 
 [node name="PathFollow2D" type="PathFollow2D"]
 position = Vector2( 52, 73 )
-rotation = 1.55609
 
 [node name="Enemy" type="KinematicBody2D" parent="."]
 script = ExtResource( 1 )
@@ -18,7 +17,6 @@ scale = Vector2( 2.5, 2 )
 shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="Enemy"]
-scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 2 )
 offset = Vector2( 0, 20 )
 
