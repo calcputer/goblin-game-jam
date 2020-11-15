@@ -37,4 +37,15 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+anchor_bottom = 800.0
+margin_left = 20.0
+margin_top = 500.0
+margin_right = 1004.0
+margin_bottom = 580.0
+text = "By Calc, Jake, & Jet"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Button" to="Button" method="_on_Button_pressed"]

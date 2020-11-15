@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.709804, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0, 0, 0 )
+
+[node name="Node" type="Node"]
+
+[node name="GUICanvas" type="CanvasLayer" parent="."]
+
+[node name="GUI" type="MarginContainer" parent="GUICanvas"]
+anchor_right = 1.0
+margin_bottom = 60.0
+custom_constants/margin_right = 10
+custom_constants/margin_top = 10
+custom_constants/margin_left = 10
+custom_constants/margin_bottom = 10
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LifeBar" type="ProgressBar" parent="GUICanvas/GUI"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 1014.0
+margin_bottom = 50.0
+size_flags_vertical = 1
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 0 )
+max_value = 1000.0
+value = 1000.0
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color( 0.0666667, 0.0666667, 0.0666667, 1 )
