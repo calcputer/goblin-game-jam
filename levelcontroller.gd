@@ -14,3 +14,5 @@ func _process(delta):
 	if brain:
 		brainJuice = brainJuice -1
 		(get_node("GUI/LifeBar") as ProgressBar).value = brainJuice
+		if brainJuice <= 0:
+			get_tree().change_scene("res://LoseScreen.tscn")

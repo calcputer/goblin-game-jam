@@ -9,4 +9,4 @@ func _on_player_brainMode(brainMode):
 
 func _on_Player_body_entered(body):
 	if body == get_node("/root/Lab/Player"):
-		print("AHA!")
+		get_tree().change_scene("res://LoseScreen.tscn")

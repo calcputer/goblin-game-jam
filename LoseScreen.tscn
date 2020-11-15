@@ -25,14 +25,14 @@ margin_left = 20.0
 margin_top = 20.0
 margin_right = 1004.0
 margin_bottom = 580.0
-text = "Game Title"
+text = "You Lost?! XD"
 
 [node name="Button" type="Button" parent="."]
 margin_left = 413.533
 margin_top = 349.106
 margin_right = 613.533
 margin_bottom = 399.106
-text = "Start Game"
+text = "Retry"
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
